@@ -22,9 +22,16 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
+-- vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"
+
+-- Strip trailing whitespaces on save
+vim.api.nvim_create_autocmd(
+    "BufAdd",
+    { pattern = "*", command = "set list listchars=trail:-,eol:↵" }
+)
+

@@ -9,10 +9,10 @@ vim.keymap.set("n", "<leader><down>", "<C-w>s")
 vim.keymap.set("n", "<leader><left>", "<C-w>v")
 
 -- Window pane movement
-vim.keymap.set("n", "<S-up>", "<C-w><up>")
-vim.keymap.set("n", "<S-right>", "<C-w><right>")
-vim.keymap.set("n", "<S-down>", "<C-w><down>")
-vim.keymap.set("n", "<S-left>", "<C-w><left>")
+vim.keymap.set("n", "<S-up>", "<C-w>k")
+vim.keymap.set("n", "<S-right>", "<C-w>l")
+vim.keymap.set("n", "<S-down>", "<C-w>j")
+vim.keymap.set("n", "<S-left>", "<C-w>h")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")

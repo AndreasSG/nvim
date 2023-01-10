@@ -19,6 +19,7 @@ lsp.configure('sumneko_lua', {
     }
 })
 
+
 lsp.on_attach(function(client, bufnr)
 	local opts = {buffer = bufnr, remap = false}
 
@@ -44,3 +45,6 @@ lsp.setup()
 vim.diagnostic.config({
     virtual_text = true,
 })
+
+vim.cmd[[colorscheme noctis-azureus]]
+
