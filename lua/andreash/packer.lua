@@ -18,6 +18,14 @@ return require('packer').startup(function(use)
 
   use("mbbill/undotree")
 
+  use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  },
+  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+}
+
   use({
       "kylechui/nvim-surround",
       tag = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -57,6 +65,9 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use('mhartington/oceanic-next')
   use 'folke/tokyonight.nvim'
+  use 'tanvirtin/monokai.nvim'
+
 
 end)

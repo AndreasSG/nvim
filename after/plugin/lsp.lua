@@ -46,5 +46,15 @@ vim.diagnostic.config({
     virtual_text = true,
 })
 
-vim.cmd[[colorscheme noctis-azureus]]
+-- augroup user_colors
+--   autocmd!
+--   autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
+-- augroup END
+
+-- vim.api.nvim_create_autocmd(
+--     "BufAdd",
+--     { pattern = "*", command = "ColorScheme * highlight Normal ctermbg=NONE guibg=NONE" }
+-- )
+
+vim.cmd[[colorscheme monokai_pro]]
 

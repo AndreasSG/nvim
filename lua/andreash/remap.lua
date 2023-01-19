@@ -22,6 +22,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- nvim tree
+vim.keymap.set("n", "<leader>o", [[:NvimTreeToggle <Enter>]])
+
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 

@@ -29,9 +29,9 @@ vim.opt.updatetime = 50
 
 -- vim.opt.colorcolumn = "80"
 
--- Strip trailing whitespaces on save
+-- Display whitespace, tabspace, and EOL
 vim.api.nvim_create_autocmd(
     "BufAdd",
-    { pattern = "*", command = "set list listchars=trail:-,eol:↵" }
+    { pattern = "*", command = "set list listchars=tab:aa»,trail:-,eol:↵" }
 )
 
