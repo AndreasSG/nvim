@@ -79,12 +79,6 @@ _G.packer_plugins = {
     path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  catppuccin = {
-    config = { "\27LJ\2\n£\b\0\0\5\0\"\00016\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\0035\4\v\0=\4\f\0034\4\0\0=\4\r\0034\4\0\0=\4\14\0034\4\0\0=\4\15\0034\4\0\0=\4\16\0034\4\0\0=\4\17\0034\4\0\0=\4\18\0034\4\0\0=\4\19\0034\4\0\0=\4\20\0034\4\0\0=\4\21\0034\4\0\0=\4\22\3=\3\23\0025\3\25\0005\4\24\0=\4\26\3=\3\27\0024\3\0\0=\3\28\0025\3\29\0=\3\30\2B\0\2\0016\0\31\0009\0 \0'\2!\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\17integrations\1\0\6\vnotify\1\bcmp\2\14telescope\2\rnvimtree\2\rgitsigns\2\tmini\1\22custom_highlights\20color_overrides\nmocha\1\0\0\1\0\25\rsubtext1\f#BAC2DE\vyellow\f#FAE3B0\ngreen\f#ABE9B3\vmaroon\f#E8A2AF\rlavender\f#C9CBFF\rsurface2\f#6E6C7E\roverlay1\f#988BA2\roverlay2\f#C3BAC6\vmantle\f#1A1826\rsurface0\f#302D41\roverlay0\f#6E6C7E\tbase\f#1E1E2E\tpink\f#F5C2E7\bred\f#F28FAD\ncrust\f#161320\rsubtext0\f#A6ADC8\ttext\f#D9E0EE\bsky\f#89DCEB\nmauve\f#DDB6F2\npeach\f#F8BD96\rflamingo\f#F2CDCD\14rosewater\f#F5E0DC\tteal\f#B5E8E0\tblue\f#96CDFB\rsurface1\f#575268\vstyles\14operators\ntypes\15properties\rbooleans\fnumbers\14variables\fstrings\rkeywords\14functions\nloops\17conditionals\1\2\0\0\vitalic\rcomments\1\0\0\1\2\0\0\vitalic\17dim_inactive\1\0\3\15percentage\4³æÌ™\3³æŒþ\3\nshade\tdark\fenabled\2\15background\1\0\2\nlight\nlatte\tdark\nmocha\1\0\5\27transparent_background\1\16term_colors\1\14no_italic\1\fno_bold\1\fflavour\nmocha\nsetup\15catppuccin\frequire\0" },
-    loaded = true,
-    path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -135,10 +129,21 @@ _G.packer_plugins = {
     path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-comment"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0" },
+    loaded = true,
+    path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -151,10 +156,25 @@ _G.packer_plugins = {
     path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oceanic-next"] = {
+    loaded = true,
+    path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/oceanic-next",
+    url = "https://github.com/mhartington/oceanic-next"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -171,6 +191,11 @@ _G.packer_plugins = {
     path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/Users/andreashogberg/.local/share/nvim/site/pack/packer/start/undotree",
@@ -179,10 +204,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: catppuccin
-time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\n£\b\0\0\5\0\"\00016\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\0035\4\v\0=\4\f\0034\4\0\0=\4\r\0034\4\0\0=\4\14\0034\4\0\0=\4\15\0034\4\0\0=\4\16\0034\4\0\0=\4\17\0034\4\0\0=\4\18\0034\4\0\0=\4\19\0034\4\0\0=\4\20\0034\4\0\0=\4\21\0034\4\0\0=\4\22\3=\3\23\0025\3\25\0005\4\24\0=\4\26\3=\3\27\0024\3\0\0=\3\28\0025\3\29\0=\3\30\2B\0\2\0016\0\31\0009\0 \0'\2!\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\17integrations\1\0\6\vnotify\1\bcmp\2\14telescope\2\rnvimtree\2\rgitsigns\2\tmini\1\22custom_highlights\20color_overrides\nmocha\1\0\0\1\0\25\rsubtext1\f#BAC2DE\vyellow\f#FAE3B0\ngreen\f#ABE9B3\vmaroon\f#E8A2AF\rlavender\f#C9CBFF\rsurface2\f#6E6C7E\roverlay1\f#988BA2\roverlay2\f#C3BAC6\vmantle\f#1A1826\rsurface0\f#302D41\roverlay0\f#6E6C7E\tbase\f#1E1E2E\tpink\f#F5C2E7\bred\f#F28FAD\ncrust\f#161320\rsubtext0\f#A6ADC8\ttext\f#D9E0EE\bsky\f#89DCEB\nmauve\f#DDB6F2\npeach\f#F8BD96\rflamingo\f#F2CDCD\14rosewater\f#F5E0DC\tteal\f#B5E8E0\tblue\f#96CDFB\rsurface1\f#575268\vstyles\14operators\ntypes\15properties\rbooleans\fnumbers\14variables\fstrings\rkeywords\14functions\nloops\17conditionals\1\2\0\0\vitalic\rcomments\1\0\0\1\2\0\0\vitalic\17dim_inactive\1\0\3\15percentage\4³æÌ™\3³æŒþ\3\nshade\tdark\fenabled\2\15background\1\0\2\nlight\nlatte\tdark\nmocha\1\0\5\27transparent_background\1\16term_colors\1\14no_italic\1\fno_bold\1\fflavour\nmocha\nsetup\15catppuccin\frequire\0", "config", "catppuccin")
-time([[Config for catppuccin]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
