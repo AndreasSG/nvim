@@ -57,5 +57,4 @@ vim.diagnostic.config({
 --     { pattern = "*", command = "ColorScheme * highlight Normal ctermbg=NONE guibg=NONE" }
 -- )
 
-vim.cmd[[colorscheme monokai_pro]]
 

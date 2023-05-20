@@ -28,10 +28,11 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 -- vim.opt.colorcolumn = "80"
+vim.cmd[[colorscheme tokyonight-moon]]
 
 -- Display whitespace, tabspace, and EOL
 vim.api.nvim_create_autocmd(
     "BufAdd",
-    { pattern = "*", command = "set list listchars=tab:aa»,trail:-,eol:↵" }
+    { pattern = "*", command = "set list listchars=tab:»»,trail:-,eol:↵" }
 )
 

@@ -1,30 +1,30 @@
+-- import nvim-tree plugin safely
+local setup, nvimtree = pcall(require, "nvim-tree")
+if not setup then
+  return
+end
 
--- disable netrw at the very start of your init.lua (strongly advised)
+-- recommended settings from nvim-tree documentation
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- set termguicolors to enable highlight groups
-vim.opt.termguicolors = true
+-- change color for arrows in tree to light blue
+vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
--- empty setup using defaults
-require("nvim-tree").setup()
-
--- OR setup with some options
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    adaptive_size = true,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
+-- configure nvim-tree
+nvimtree.setup({
+  -- disable window_picker for
+  -- explorer to work well with
+  -- window splits
+  actions = {
+    open_file = {
+      window_picker = {
+        enable = false,
       },
     },
   },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
+  -- 	git = {
+  -- 		ignore = false,
+  -- 	},
 })
 

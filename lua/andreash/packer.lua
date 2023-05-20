@@ -14,17 +14,17 @@ return require('packer').startup(function(use)
 
   use("nvim-treesitter/nvim-treesitter", {run = ':TSUpdate'})
 
+  -- Use hjkl to navigate splits
+  use("christoomey/vim-tmux-navigator")
+
   use("ThePrimeagen/harpoon")
 
   use("mbbill/undotree")
 
-  use {
-  'nvim-tree/nvim-tree.lua',
-  requires = {
-    'nvim-tree/nvim-web-devicons', -- optional, for file icons
-  },
-  tag = 'nightly' -- optional, updated every week. (see issue #1193)
-}
+  use('nvim-tree/nvim-tree.lua')
+
+    -- vs-code like icons
+  use("nvim-tree/nvim-web-devicons")
 
   use({
       "kylechui/nvim-surround",
